@@ -26,7 +26,7 @@ def setup(opts):
 
     return model
 
-command_inputs = {"input_image" : image)}
+command_inputs = {"input_image" : image}
 command_outputs = {"output_image" : image}
 
 @runway.command("cartoonize_image", inputs=command_inputs, outputs=command_outputs, description="Cartoonize the input image")
