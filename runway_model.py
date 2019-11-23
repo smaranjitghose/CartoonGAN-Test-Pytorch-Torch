@@ -19,6 +19,7 @@ def setup(opts):
 
     if torch.cuda.is_available():
         print("GPU Mode")
+        model.cuda()
     else:
         print("CPU Mode")
         model.float()
