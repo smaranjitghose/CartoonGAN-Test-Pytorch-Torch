@@ -1,4 +1,4 @@
-<a href="https://open-app.runwayml.com/?model=sree_harsha/CartoonGAN" target="_blank"><img src="https://open-app.runwayml.com/gh-badge.svg" /></a
+<a href="https://open-app.runwayml.com/?model=sree_harsha/CartoonGAN" target="_blank"><img src="https://open-app.runwayml.com/gh-badge.svg" /></a>
 
 # CartoonGAN-Test-Pytorch-Torch
 Pytorch and Torch testing code of [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf) `[Chen et al., CVPR18]`. With the released pretrained [models](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) by the authors, I made these simple scripts for a quick test.
