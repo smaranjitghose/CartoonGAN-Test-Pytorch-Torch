@@ -26,7 +26,7 @@ def setup(opts):
 
     return model
 
-command_inputs = {"input_image" : image, "load_size" : number(description="Adjust loaded size", default=450, step=10, min=450)}
+command_inputs = {"input_image" : image)}
 command_outputs = {"output_image" : image}
 
 @runway.command("cartoonize_image", inputs=command_inputs, outputs=command_outputs, description="Cartoonize the input image")
@@ -37,10 +37,8 @@ def cartoonize_image(model, inputs):
     h, w = img.size[0], img.size[1]
     ratio = h * 1.0 / w
     if ratio > 1:
-        h = inputs["load_size"]
         w = int(h * 1.0/ratio)
     else:
-        w = inputs["load_size"]
         h = int(w * 1.0/ratio)
 
     input_image = img.resize((h, w), Image.BICUBIC)
